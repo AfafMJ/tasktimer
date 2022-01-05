@@ -3,13 +3,20 @@ package com.afaf.tasktimer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
-
+import kotlinx.coroutines.*
+import androidx.room.Room
+import androidx.room.RoomDatabase
 
 class MainActivity : AppCompatActivity() {
+
+    // Abdullah Comment
 
     lateinit var Task: ArrayList<String>
     lateinit var adapter : RecyclerViewTask
     lateinit var rvTask : RecyclerView
+
+   lateinit var demo:String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -18,5 +25,10 @@ class MainActivity : AppCompatActivity() {
         adapter = RecyclerViewTask(Task)
         rvTask.adapter = adapter
         rvTask.layoutManager
+
+
+        //hi from wasan
     }
+
+
 }
