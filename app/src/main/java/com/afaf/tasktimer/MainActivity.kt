@@ -12,6 +12,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var Task: ArrayList<String>
     lateinit var adapter : RecyclerViewTask
     lateinit var rvTask : RecyclerView
+
+   lateinit var demo:String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,4 +27,6 @@ class MainActivity : AppCompatActivity() {
 
         //hi from wasan
     }
+
+
 }
